@@ -1,6 +1,22 @@
 package com.example.avayatest.Models;
 
 public class Parametros {
+    /***
+     * Clase Modelo para los Parametros requeridos por el endpoint de Avaya
+     */
+    public Parametros(){}
+
+    /***
+     * Constructor con los campos necesarios para el request test de AVAYA
+     * @param mail Correo Electronico
+     * @param param1 Nombre del boton
+     * @param param2 Param2
+     */
+    public Parametros(String mail, String param1, String param2){
+        correoElectronico = mail;
+        Param1 = param1;
+        Param2 = param2;
+    }
 
     private String correoElectronico;
     private String Param1;

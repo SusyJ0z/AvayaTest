@@ -32,6 +32,9 @@ public class DialogConfig extends Dialog {
         setViews();
     }
 
+    /***
+     * Inicializa las vistas del Dialog
+     */
     private void setViews() {
         et_dialogConfig_mail = findViewById(R.id.et_dialogConfig_mail);
         et_dialogConfig_corriente = findViewById(R.id.et_dialogConfig_corriente);

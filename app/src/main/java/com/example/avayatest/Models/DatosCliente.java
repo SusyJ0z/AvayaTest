@@ -1,5 +1,8 @@
 package com.example.avayatest.Models;
 
+/***
+ * Clase Modelo para los datos del cliente
+ */
 public class DatosCliente {
 
     public String getMail() {        return mail;    }
