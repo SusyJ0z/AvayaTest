@@ -4,17 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="15dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
+    tools:context=".Activities.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/tv_inicial"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:text="Para continuar debes ingresar tus datos en el menu de configuracion que se encuentra en la parte superior derecha."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ll_general"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#INFO" />
+
+        <Button
+            android:id="@+id/btn_saldoCredito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saldo Credito" />
+
+        <Button
+            android:id="@+id/btn_saldoAhorro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saldo Ahorros" />
+
+        <Button
+            android:id="@+id/btn_solicitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solicitud de Prestamo" />
+
+        <Button
+            android:id="@+id/btn_Hablar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hablar con un agente" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salir" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
