@@ -219,6 +219,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /***
+     * Clase para ejecucion de codigo asincrono
+     */
     private class SendPostRequestAsync extends AsyncTask<Parametros, Void, Integer>{
 
         private ProgressDialog dialog = new ProgressDialog(MainActivity.this);
