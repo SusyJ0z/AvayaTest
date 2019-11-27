@@ -21,15 +21,14 @@ public class DialogConfig extends Dialog {
 
     private EditText et_dialogConfig_mail, et_dialogConfig_corriente,
             et_dialogConfig_ahorro, et_dialogConfig_prestamo, et_dialogConfig_phone;
-    private Button
-            /***
-             *Boton para cerrar el Dialog
-              */
-            btn_dialog_exit,
+    /***
+     *Boton para cerrar el Dialog
+     */
+    private Button btn_dialog_exit;
     /***
      * Boton para guardar los datos.
      */
-            btn_dialog_save;
+    private Button btn_dialog_save;
 
 
     public DialogConfig(@NonNull Context context) {

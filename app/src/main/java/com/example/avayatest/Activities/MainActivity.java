@@ -40,8 +40,18 @@ import java.io.IOException;
 public class MainActivity extends AppCompatActivity {
 
     private Button btn_saldoCredito, btn_saldoAhorro, btn_solicitud, btn_Hablar, btn_exit;
-    private TextView tv_inicial, tv_info;
+    private TextView tv_inicial;
+    /**
+     * Text view inicial, aqui se muestran las instrucciones cuando aun no se almacenan los datos del usuario
+      */
+    private TextView tv_info;
+    /***
+     * Layout que aloja los botones del menu de opciones
+     */
     private LinearLayout ll_general;
+    /***
+     * Valor entero para el request de seleccion de imagen para el logo
+     */
     private Integer PICK_IMAGE_REQUEST = 45220;
 
     @Override

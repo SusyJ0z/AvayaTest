@@ -21,6 +21,10 @@ import java.util.List;
  * Clase para metodos que consuman el endpoint de Avaya
  */
 public class ApiTest {
+
+    /***
+     * Variable que guarda la url del endpoint de avaya
+     */
     private static String BASE_URL = "http://breeze2-132.collaboratory.avaya.com/services/EventingConnector/events";
 
     /***
