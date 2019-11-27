@@ -55,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /***
+     * Metodo para inicializar views
+     */
     private void setviews() {
         tv_inicial = findViewById(R.id.tv_inicial);
         ll_general = findViewById(R.id.ll_general);
@@ -143,6 +146,9 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    /***
+     * Metodo para verificar que la aplicacion tiene permisos para acceder al almacenamiento [READ_EXTERNAL_STORAGE]
+     */
     private void ChekFilePermission() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {
@@ -169,6 +175,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /***
+     * Metodo para lanzar el intent de seleccion de imagen para el logo
+     */
     private void ChangeLogo() {
         Intent intent = new Intent();
         intent.setType("image/*");
@@ -181,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
-
+            //Si el intent recivido es de la seleccion de imagen, se procede a generar el recurso que sera el logo de la aplicacion
             Uri uri = data.getData();
 
             try {
@@ -221,6 +230,7 @@ public class MainActivity extends AppCompatActivity {
 
     /***
      * Clase para ejecucion de codigo asincrono
+     * Es necesario pasar el Objeto PArametros que contiene la informacion del usuario en el metodo Execute()
      */
     private class SendPostRequestAsync extends AsyncTask<Parametros, Void, Integer>{
 
